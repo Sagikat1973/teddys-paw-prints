@@ -17,8 +17,13 @@ document.querySelectorAll('.nav a').forEach(link => {
 document.querySelectorAll('[data-amount]').forEach(button => {
   button.addEventListener('click', () => {
     const amount = button.dataset.amount;
-    document.querySelector('#donation-message').textContent =
-      `${amount} selected. Connect this section to your chosen donation platform to accept secure gifts.`;
+    const paypalUrl = 'https://www.paypal.com/ncp/payment/WBFSXVQW8JUHA';
+
+    if (amount === 'Custom') {
+      window.location.href = paypalUrl;
+    } else {
+      window.location.href = paypalUrl + '?amount=' + amount;
+    }
   });
 });
 
