@@ -17,7 +17,7 @@ document.querySelectorAll('.nav a').forEach(link => {
 document.querySelectorAll('[data-amount]').forEach(button => {
   button.addEventListener('click', () => {
     const amount = button.dataset.amount;
-    const paypalUrl = 'https://www.paypal.com/ncp/payment/WBFSXVQW8JUHA';
+    const paypalUrl = 'https://www.paypal.com/ncp/payment/LL9YWPHL2DLK6';
 
     if (amount === 'Custom') {
       window.location.href = paypalUrl;
