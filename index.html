@@ -144,21 +144,20 @@
         <p class="eyebrow">Veterinary Assistance</p>
         <h2>Request help with veterinary care</h2>
         <p class="form-note">
-          This prototype form does not send data yet. It shows the information we can collect
-          once we connect the site to a secure form service.
-        </p>
-        <form onsubmit="return false;">
+  Please complete the form below to request veterinary assistance. We will review your request and contact you as soon as possible.
+</p>
+        <form action="https://formspree.io/f/xaeypdll" method="POST">
           <div class="field-row">
-            <label>Your name<input type="text" placeholder="Full name"></label>
-            <label>Email<input type="email" placeholder="you@example.com"></label>
+            <label>Your name<input type="text" name="name" placeholder="Full name"></label>
+            <label>Email<input type="email" name="email" placeholder="you@example.com"></label>
           </div>
           <div class="field-row">
-            <label>Pet's name<input type="text" placeholder="Pet's name"></label>
-            <label>Type of pet<input type="text" placeholder="Dog, cat, etc."></label>
+            <label>Pet's name<input type="text" name="pet_name" placeholder="Pet's name"></label>
+            <label>Type of pet<input type="text" name="pet_type" placeholder="Dog, cat, etc."></label>
           </div>
-          <label>Veterinary clinic<input type="text" placeholder="Clinic name, if known"></label>
-          <label>What care is needed?<textarea rows="4" placeholder="Tell us what your pet needs and any estimate you have received."></textarea></label>
-          <button class="button" type="button">Submit Request</button>
+          <label>Veterinary clinic<input type="text" name="vet_clinic" placeholder="Clinic name, if known"></label>
+          <label>What care is needed?<textarea name="care_needed" rows="4" placeholder="Tell us what your pet needs and any estimate you have received."></textarea></label>
+          <button class="submit" type="submit">Submit Request</button>
         </form>
       </div>
 
