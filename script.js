@@ -19,10 +19,13 @@ document.querySelectorAll('[data-amount]').forEach(button => {
     const amount = button.dataset.amount;
     const paypalUrl = 'https://www.paypal.com/ncp/payment/LL9YWPHL2DLK6';
 const paypal50 = 'https://www.paypal.com/ncp/payment/B2KB77JAAGDPY';
+    const paypal100 = 'https://www.paypal.com/ncp/payment/G36QQTBFA5ENA';
    if (amount === 'Custom') {
   window.location.href = paypalUrl;
 } else if (amount === '$50') {
   window.location.href = paypal50;
+     } else if (amount === '$100') {
+  window.location.href = paypal100;
 } else {
   window.location.href = paypalUrl + '?amount=' + amount;
 }
