@@ -20,8 +20,9 @@ document.querySelectorAll('[data-amount]').forEach(button => {
     const paypalUrl = 'https://www.paypal.com/ncp/payment/LL9YWPHL2DLK6';
 const paypal50 = 'https://www.paypal.com/ncp/payment/B2KB77JAAGDPY';
     const paypal100 = 'https://www.paypal.com/ncp/payment/G36QQTBFA5ENA';
+    const paypalCustom = 'https://www.paypal.com/ncp/payment/RELWBRFVUL8YL';
    if (amount === 'Custom') {
-  window.location.href = paypalUrl;
+  window.location.href = paypalCustom;
 } else if (amount === '$50') {
   window.location.href = paypal50;
      } else if (amount === '$100') {
