@@ -21,7 +21,7 @@ document.querySelectorAll('[data-amount]').forEach(button => {
 const paypal50 = 'https://www.paypal.com/ncp/payment/B2KB77JAAGDPY';
    if (amount === 'Custom') {
   window.location.href = paypalUrl;
-} else if (amount === '50') {
+} else if (amount === '$50') {
   window.location.href = paypal50;
 } else {
   window.location.href = paypalUrl + '?amount=' + amount;
