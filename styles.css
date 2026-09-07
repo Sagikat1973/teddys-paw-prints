@@ -106,9 +106,9 @@ h3{font-size:1.6rem;margin-bottom:12px}
 .donation-options button{
   min-width:92px;padding:13px 18px;border-radius:999px;
   border:1px solid rgba(255,255,255,.35);background:rgba(255,255,255,.1);
-  color:white;font-weight:800;cursor:pointer
+  color:white;font-weight:800;cursor:pointer;transition:transform .2s ease,box-shadow .2s ease
 }
-.donation-options button:hover{background:white;color:var(--brown)}
+.donation-options button:hover{background:white;color:var(--brown);transform:translateY(-3px);box-shadow:0 8px 18px rgba(0,0,0,.2)}
 .donation-message{color:#ead9c3;margin-bottom:0}
 .ways-section{padding:30px 24px 90px;max-width:1180px;margin:auto}
 .section-heading{max-width:760px}
